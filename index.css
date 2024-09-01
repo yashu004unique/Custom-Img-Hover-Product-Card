@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+   
+.card{
+    width: 350px;
+    box-shadow: 0 0 10px black;
+    border-radius: 20px;
+    
+    position: relative;
+    
+}
+.product-img{
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    
+}
+.product-img img{
+    width: 350px;
+    border-radius: 10px;
+    
+}
+.product-details{
+    padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    bottom: 0;
+    background: rgb(228, 238, 238);        
+    opacity: 0;
+    transition: 2s;   
+   
+}
+.product-name{
+    font-size: 18px;
+    margin-bottom: 10px;
+    word-spacing: 1px;
+}
+.product-rating{
+    margin-bottom: 5px;
+}
+.product-rating i{
+    color: #d07700;
+    font-size: 20px;
+}
+.product-rating b{
+    font-size: 20px;
+}
+
+.product-offer span{
+    color: red;
+    font-size: 24px;    
+}
+.product-offer p{
+    font-size: 12px;
+}
+ .product-price{
+    display: flex;
+       
+ }
+ .final-price b{
+    font-size: 29px;
+    
+ }
+ .final-price i{
+    display: flex;
+    
+    font-size: 12px;
+    margin-top: 3px;
+ }
+ .product-img:hover ~ .product-details{
+    opacity: 1;
+}
+.name{
+    font-size: 38px;
+    font-style: italic;
+    font-weight: 500;
+    border-bottom: 2px dotted black;
